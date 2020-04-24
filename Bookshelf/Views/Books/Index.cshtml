@@ -3,11 +3,11 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h1>Index</h1>
-
+<br/>
+<h1>My Bookshelf</h1>
+<br/>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-link" asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -43,8 +43,8 @@
                     </ul>
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-link" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a class="btn btn-link" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }
